@@ -9,5 +9,9 @@ buttons.forEach(btn => {
 		ripples.style.left = x + 'px';
 		ripples.style.top = y + 'px';
 		this.appendChild(ripples);
+
+		setTimeout(() => {
+			ripples.remove()
+		}, 1000);
 	})
 })
